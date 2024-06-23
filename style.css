@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-image: url("running-background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 40px auto;
+  background-color: #404b56;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 40px 40px;
+}
+.left-column {
+  width: 45%;
+  padding: 10px;
+}
+.right-column {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.contact {
+  color: #fff;
+}
+.contact h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  text-align: center;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  display: block;
+  margin-top: 15px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e3d9bf;
+  outline-color: #e3d9bf;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+textarea {
+  height: 100px;
+}
+button {
+  width: 125px;
+  display: inline-block;
+  color: #fff;
+  background-color: #fea116;
+  font-size: 17px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.content {
+  margin-top: 40px;
+  text-align: center;
+  padding: 25px;
+}
+.content h1 {
+  font-size: 32px;
+  color: #fea116;
+  margin-top: 25px;
+}
+.content p {
+  margin: 8px 0px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content h2 {
+  margin-top: 25px;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #4e5663;
+    background-image: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #576e84;
+  }
+  .left-column {
+    width: 85%;
+  }
+  .right-column {
+    margin-top: 25px;
+    width: 85%;
+  }
+  .content {
+    margin: 0;
+  }
+  .content p {
+    text-align: center;
+  }
+  button {
+    width: 100%;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  body {
+    background-color: #4e5663;
+    background-image: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    margin: 0;
+  }
+  .left-column {
+    width: 85%;
+  }
+  .right-column {
+    margin-top: 25px;
+    width: 85%;
+  }
+}
